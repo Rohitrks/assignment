@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="6" ignored="0" total="17" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4527" started-at="2019-05-27T12:01:49Z" finished-at="2019-05-27T12:01:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4527" started-at="2019-05-27T12:01:49Z" finished-at="2019-05-27T12:01:54Z">
+      <class name="com.mytaxi.testscript.VerifyComments">
+        <test-method status="PASS" signature="verifyUsersAvailability()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyUsersAvailability" duration-ms="2447" started-at="2019-05-27T17:31:49Z" description="verify user is available" finished-at="2019-05-27T17:31:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsersAvailability -->
+        <test-method status="PASS" signature="verifyPosts()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyPosts" duration-ms="1038" started-at="2019-05-27T17:31:52Z" description="verify if user has posts" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyUsersAvailability" finished-at="2019-05-27T17:31:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPosts -->
+        <test-method status="PASS" signature="verifyComments()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyComments" duration-ms="996" started-at="2019-05-27T17:31:53Z" description="verify Posts has Comments" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyPosts" finished-at="2019-05-27T17:31:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComments -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack21 @gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format barack21 @gmail.com expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format barack21 @gmail.com expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack#25@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format barack#25@gmail.com expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format barack#25@gmail.com expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack6@gmailcom]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format barack6@gmailcom expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format barack6@gmailcom expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack10@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@hotmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format @hotmail.com expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format @hotmail.com expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack9@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack22@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack3@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack8gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format barack8gmail.com expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format barack8gmail.com expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack2@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack18@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack24@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack17@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[barack7@gmail.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email is not in proper Format barack7@gmail. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email is not in proper Format barack7@gmail. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFormat -->
+      </class> <!-- com.mytaxi.testscript.VerifyComments -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

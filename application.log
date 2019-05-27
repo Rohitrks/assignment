@@ -1,0 +1,282 @@
+2019-05-27 17:31:49 INFO  RestApiActions:24 : Requested URI : https://my-json-server.typicode.com/rohitrks/mytaxi/profile
+2019-05-27 17:31:52 INFO  RestApiActions:27 : 
+Response Body :  
+[
+  {
+    "userid": 1900,
+    "name": "Anoop"
+  },
+  {
+    "userid": 1905,
+    "name": "tanya"
+  },
+  {
+    "userid": 1906,
+    "name": "Samantha"
+  },
+  {
+    "userid": 1907,
+    "name": "Abi"
+  },
+  {
+    "userid": 1909,
+    "name": "jc"
+  },
+  {
+    "userid": 1910,
+    "name": "any"
+  },
+  {
+    "userid": 1922,
+    "name": "samy"
+  }
+]
+
+2019-05-27 17:31:52 INFO  RestApiActions:24 : Requested URI : https://my-json-server.typicode.com/rohitrks/mytaxi/posts
+2019-05-27 17:31:53 INFO  RestApiActions:27 : 
+Response Body :  
+[
+  {
+    "userid": 1905,
+    "id": 1,
+    "title": "Post 1"
+  },
+  {
+    "userid": 1906,
+    "id": 2,
+    "title": "Post 2"
+  },
+  {
+    "userid": 1906,
+    "id": 3,
+    "title": "Post 3"
+  },
+  {
+    "userid": 1909,
+    "id": 4,
+    "title": "Post 4"
+  },
+  {
+    "userid": 1907,
+    "id": 5,
+    "title": "Post 5"
+  },
+  {
+    "userid": 1906,
+    "id": 6,
+    "title": "Post 6"
+  },
+  {
+    "userid": 1906,
+    "id": 7,
+    "title": "Post 7"
+  },
+  {
+    "userid": 1906,
+    "id": 8,
+    "title": "Post 8"
+  },
+  {
+    "userid": 1906,
+    "id": 9,
+    "title": "Post 9"
+  },
+  {
+    "userid": 1906,
+    "id": 10,
+    "title": "Post 10"
+  },
+  {
+    "userid": 1907,
+    "id": 11,
+    "title": "Post 11"
+  },
+  {
+    "userid": 1905,
+    "id": 12,
+    "title": "Post 12"
+  },
+  {
+    "userid": 1905,
+    "id": 13,
+    "title": "Post 13"
+  },
+  {
+    "userid": 1909,
+    "id": 14,
+    "title": "Post 14"
+  },
+  {
+    "userid": 1905,
+    "id": 15,
+    "title": "Post 15"
+  },
+  {
+    "userid": 1909,
+    "id": 16,
+    "title": "Post 16"
+  },
+  {
+    "userid": 1905,
+    "id": 17,
+    "title": "Post 17"
+  }
+]
+
+2019-05-27 17:31:53 INFO  RestApiActions:24 : Requested URI : https://my-json-server.typicode.com/rohitrks/mytaxi/comments
+2019-05-27 17:31:54 INFO  RestApiActions:27 : 
+Response Body :  
+[
+  {
+    "id": 1,
+    "body": "barack1@gmail.com",
+    "postId": 1
+  },
+  {
+    "id": 2,
+    "body": "barack2@gmail.com",
+    "postId": 2
+  },
+  {
+    "id": 3,
+    "body": "barack3@gmail.com",
+    "postId": 3
+  },
+  {
+    "id": 4,
+    "body": "barack4@gmail.com",
+    "postId": 4
+  },
+  {
+    "id": 5,
+    "body": "barack5@gmail.com",
+    "postId": 5
+  },
+  {
+    "id": 6,
+    "body": "barack6@gmailcom",
+    "postId": 6
+  },
+  {
+    "id": 7,
+    "body": "barack7@gmail.",
+    "postId": 7
+  },
+  {
+    "id": 8,
+    "body": "barack8gmail.com",
+    "postId": 8
+  },
+  {
+    "id": 9,
+    "body": "barack9@gmail.com",
+    "postId": 9
+  },
+  {
+    "id": 10,
+    "body": "barack10@gmail.com",
+    "postId": 10
+  },
+  {
+    "id": 11,
+    "body": "barack11@gmail.com",
+    "postId": 11
+  },
+  {
+    "id": 12,
+    "body": "barack12@gmail.com",
+    "postId": 12
+  },
+  {
+    "id": 13,
+    "body": "barack13@gmail.com",
+    "postId": 13
+  },
+  {
+    "id": 14,
+    "body": "barack14@gmail.com",
+    "postId": 14
+  },
+  {
+    "id": 15,
+    "body": "barack15@gmail.com",
+    "postId": 15
+  },
+  {
+    "id": 16,
+    "body": "barack16@gmail.com",
+    "postId": 1
+  },
+  {
+    "id": 17,
+    "body": "barack17@gmail.com",
+    "postId": 2
+  },
+  {
+    "id": 18,
+    "body": "barack18@gmail.com",
+    "postId": 3
+  },
+  {
+    "id": 19,
+    "body": "barack19@gmail.com",
+    "postId": 4
+  },
+  {
+    "id": 20,
+    "body": "barack20@gmail.com",
+    "postId": 5
+  },
+  {
+    "id": 21,
+    "body": "barack21 @gmail.com",
+    "postId": 6
+  },
+  {
+    "id": 22,
+    "body": "barack22@gmail.com",
+    "postId": 7
+  },
+  {
+    "id": 23,
+    "body": "@hotmail.com",
+    "postId": 8
+  },
+  {
+    "id": 24,
+    "body": "barack24@gmail.com",
+    "postId": 9
+  },
+  {
+    "id": 25,
+    "body": "barack#25@gmail.com",
+    "postId": 10
+  },
+  {
+    "id": 26,
+    "body": "barack26#gmail.com",
+    "postId": 11
+  },
+  {
+    "id": 27,
+    "body": "barack27@gmail.com",
+    "postId": 12
+  },
+  {
+    "id": 28,
+    "body": "barack28@gmail.com",
+    "postId": 13
+  },
+  {
+    "id": 29,
+    "body": "bar ack29@gmail.com",
+    "postId": 14
+  },
+  {
+    "id": 30,
+    "body": "barack30@gmail..com",
+    "postId": 15
+  }
+]
+
+2019-05-27 17:31:54 INFO  VerifyComments:111 : [barack21 @gmail.com, barack#25@gmail.com, barack6@gmailcom, barack10@gmail.com, @hotmail.com, barack9@gmail.com, barack22@gmail.com, barack3@gmail.com, barack8gmail.com, barack2@gmail.com, barack18@gmail.com, barack24@gmail.com, barack17@gmail.com, barack7@gmail.]
