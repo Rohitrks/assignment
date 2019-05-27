@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 4.997 sec <<< FAILURE! - in TestSuite
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format barack21 @gmail.com expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format barack#25@gmail.com expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format barack6@gmailcom expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format @hotmail.com expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format barack8gmail.com expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+
+verifyEmailFormat(com.mytaxi.testscript.VerifyComments)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Email is not in proper Format barack7@gmail. expected [true] but found [false]
+	at com.mytaxi.testscript.VerifyComments.verifyEmailFormat(VerifyComments.java:120)
+

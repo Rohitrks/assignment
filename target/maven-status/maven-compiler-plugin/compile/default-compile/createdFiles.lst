@@ -1,0 +1,5 @@
+com\mytaxi\pojo\ResponseProfile.class
+com\mytaxi\utilities\RestApiActions.class
+com\mytaxi\pojo\ResponsePost.class
+com\mytaxi\utilities\CommonUtilities.class
+com\mytaxi\pojo\ResponseComment.class

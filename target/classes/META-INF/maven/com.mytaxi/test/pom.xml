@@ -86,9 +86,7 @@
 	</dependencies>
 
 	<build>
-
 		<plugins>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -106,9 +104,9 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<forkMode>never</forkMode>
 				</configuration>
 			</plugin>
 		</plugins>
-
 	</build>
 </project>

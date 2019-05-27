@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="6" ignored="0" total="17" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4527" started-at="2019-05-27T12:01:49Z" finished-at="2019-05-27T12:01:54Z">
+  <suite name="Suite" duration-ms="4658" started-at="2019-05-27T13:55:47Z" finished-at="2019-05-27T13:55:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4527" started-at="2019-05-27T12:01:49Z" finished-at="2019-05-27T12:01:54Z">
+    <test name="Test" duration-ms="4658" started-at="2019-05-27T13:55:47Z" finished-at="2019-05-27T13:55:52Z">
       <class name="com.mytaxi.testscript.VerifyComments">
-        <test-method status="PASS" signature="verifyUsersAvailability()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyUsersAvailability" duration-ms="2447" started-at="2019-05-27T17:31:49Z" description="verify user is available" finished-at="2019-05-27T17:31:52Z">
+        <test-method status="PASS" signature="verifyUsersAvailability()[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" name="verifyUsersAvailability" duration-ms="2527" started-at="2019-05-27T19:25:47Z" description="verify user is available" finished-at="2019-05-27T19:25:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUsersAvailability -->
-        <test-method status="PASS" signature="verifyPosts()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyPosts" duration-ms="1038" started-at="2019-05-27T17:31:52Z" description="verify if user has posts" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyUsersAvailability" finished-at="2019-05-27T17:31:53Z">
+        <test-method status="PASS" signature="verifyPosts()[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" name="verifyPosts" duration-ms="1056" started-at="2019-05-27T19:25:50Z" description="verify if user has posts" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyUsersAvailability" finished-at="2019-05-27T19:25:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPosts -->
-        <test-method status="PASS" signature="verifyComments()[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" name="verifyComments" duration-ms="996" started-at="2019-05-27T17:31:53Z" description="verify Posts has Comments" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyPosts" finished-at="2019-05-27T17:31:54Z">
+        <test-method status="PASS" signature="verifyComments()[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" name="verifyComments" duration-ms="1038" started-at="2019-05-27T19:25:51Z" description="verify Posts has Comments" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyPosts" finished-at="2019-05-27T19:25:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyComments -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="0" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="0" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -183,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="0" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -234,7 +234,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -256,7 +256,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="0" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -267,7 +267,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="0" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -318,7 +318,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -329,7 +329,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -340,7 +340,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -351,7 +351,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="PASS" duration-ms="0" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="PASS" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -362,7 +362,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
-        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@679b62af]" status="FAIL" duration-ms="1" finished-at="2019-05-27T17:31:54Z" started-at="2019-05-27T17:31:54Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
+        <test-method name="verifyEmailFormat" signature="verifyEmailFormat(java.lang.String)[pri:0, instance:com.mytaxi.testscript.VerifyComments@4bb4de6a]" status="FAIL" duration-ms="1" finished-at="2019-05-27T19:25:52Z" started-at="2019-05-27T19:25:52Z" depends-on-methods="com.mytaxi.testscript.VerifyComments.verifyComments" data-provider="emails" description="verify Email format in the Comments ">
           <params>
             <param index="0">
               <value>
@@ -414,6 +414,6 @@
           </reporter-output>
         </test-method> <!-- verifyEmailFormat -->
       </class> <!-- com.mytaxi.testscript.VerifyComments -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
